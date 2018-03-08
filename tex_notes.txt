@@ -1,0 +1,8 @@
+
+* cross referencing between two different LaTeX documents:
+Load the package
+\usepackage{xr}
+and specify the external document from which you want to reference something via
+\externaldocument{fileB}
+where fileB.tex must be the corresponding tex file within the same parent directory
+as the file you are working in.
