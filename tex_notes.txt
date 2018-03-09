@@ -6,3 +6,34 @@ and specify the external document from which you want to reference something via
 \externaldocument{fileB}
 where fileB.tex must be the corresponding tex file within the same parent directory
 as the file you are working in.
+
+For mutual cross referencing between two TeX documents, which are in the same parent folder do the following:
+
+file_A.tex:
+…
+\usepackage{xr}
+\externaldocument{file_B}
+…
+
+
+file_B.tex
+…
+\usepackage{xr}
+\externaldocument{file_A}
+…
+
+Then you can access all figure, table, equation and section labels (and so on) mutually.
+
+By default the xr package does not add hyperlinks.
+It only adds the label’s text.
+If you have identical labels in the two documents you can add a prefix to avoid
+ambiguity.
+
+\externaldocument[SI]{si}
+(e.g. to include the labels from the file si.tex)
+And then in the main.tex file you can reference them
+by \ref{SIlabelname}, where in the si.tex file
+the label only appears as
+\label{labelname}
+
+
