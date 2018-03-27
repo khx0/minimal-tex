@@ -37,3 +37,11 @@ the label only appears as
 \label{labelname}
 
 
+* unbreakable space character:
+In TeX the tilde ~ is an unbreakable space character.
+Let’s say you want to reference some table in a text by writing:
+… Table \ref{tab:myTable1}…
+Then it can happen that Table and the actual table number get broken to different lines.
+To avoid this us
+… Table~\ref{tab:myTable1}…
+instead. This is often the desired behavior in conjunction with \ref{…} or \cite{…} statements.
