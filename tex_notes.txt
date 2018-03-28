@@ -45,3 +45,10 @@ Then it can happen that Table and the actual table number get broken to differen
 To avoid this us
 … Table~\ref{tab:myTable1}…
 instead. This is often the desired behavior in conjunction with \ref{…} or \cite{…} statements.
+
+* use 
+\begin{subequations}
+…
+\end{subequations}
+To get the same equation number for all quations within this envrionment tag.
+You can define multiple \begin{align}…\end{align} brackets within this above environment.
