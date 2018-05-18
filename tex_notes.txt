@@ -52,3 +52,10 @@ instead. This is often the desired behavior in conjunction with \ref{…} or \ci
 \end{subequations}
 To get the same equation number for all quations within this envrionment tag.
 You can define multiple \begin{align}…\end{align} brackets within this above environment.
+
+* greater equal / less equal symbols
+In Tex both \geq and \ge can be used for the greated equal symbol “>=“.
+Likewise both \leq and \le can be used for the smaller equal symbol “<=“.
+For some reasons when using TeX in python’s matplotlib only the
+former version of both, i.e. \geq and \leq work.
+So there make sure to use this version for these symbols.
