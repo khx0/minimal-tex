@@ -59,3 +59,15 @@ Likewise both \leq and \le can be used for the smaller equal symbol “<=“.
 For some reasons when using TeX in python’s matplotlib only the
 former version of both, i.e. \geq and \leq work.
 So there make sure to use this version for these symbols.
+
+
+* Make subfigure labels a part of the figure reference (i.e. a clickable link in the PDF).
+Let’ say you have a figure with labels A and B.
+The figure label is fig:myFigureLabel.
+Then use
+\ref{fig:myFigureLabel}\hyperref[fig:myFigureLabel]{A}
+To also make the A subfigure label a clickable and colored reference to part A of that figure.
+Obviously requires the hyperref package. \usepackage{hyperref}
+
+
+
