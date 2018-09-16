@@ -3,10 +3,10 @@
 # contact: khx0@posteo.net
 # compile local TeX files
 # date: 2018-04-25
-# file: compileTex.sh aka paper maker
+# file: buildTex.sh aka paper maker
 ##########################################################################################
 
-# tex main document
+# run pdflatex on the main.tex file
 pdflatex main.tex
 bibtex main.aux
 pdflatex main.tex
