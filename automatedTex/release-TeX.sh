@@ -1,8 +1,9 @@
 #!/bin/bash
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
+# file: release-TeX.sh
+# date: 2018-09-16
 # build and release local TeX files
-# date: 2018-06-12
 ##########################################################################################
 
 # run pdflatex on the main.tex file

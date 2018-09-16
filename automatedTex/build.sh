@@ -1,9 +1,9 @@
 #!/bin/bash
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# compile local TeX files
-# date: 2018-04-25
-# file: buildTex.sh aka paper maker
+# file: build.sh
+# date: 2018-09-16
+# build local TeX files
 ##########################################################################################
 
 # run pdflatex on the main.tex file
@@ -12,13 +12,6 @@ bibtex main.aux
 pdflatex main.tex
 pdflatex main.tex
 pdflatex main.tex
-
-# tex supplement
-pdflatex si.tex
-bibtex si.aux
-pdflatex si.tex
-pdflatex si.tex
-pdflatex si.tex
 
 # clean up auxiliary files
 rm *.aux *.log  *.out *.toc *.bbl *.blg *.xwm
