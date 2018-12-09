@@ -1,9 +1,10 @@
 #!/bin/bash
+##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
 # file: release-TeX.sh
-# date: 2018-09-16
-# build and release local TeX files
+# date: 2018-12-09
+# build and release local TeX files with timestampe
 ##########################################################################################
 
 # run pdflatex on the main.tex file
@@ -21,4 +22,3 @@ outname="YOUR_FINAL_NAME_HERE_$(date +%Y-%m-%d).pdf"
 echo $outname
 
 mv main.pdf $outname
-
