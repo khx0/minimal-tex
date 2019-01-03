@@ -3,8 +3,8 @@
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
 # file: release-TeX.sh
-# date: 2018-12-09
-# build and release local TeX files with timestampe
+# date: 2019-01-03
+# build and release local TeX document with timestamp
 ##########################################################################################
 
 # run pdflatex on the main.tex file

@@ -1,9 +1,10 @@
 #!/bin/bash
+##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
 # file: build-Tex_paper_and_SI.sh
-# date: 2018-09-16
-# build local TeX files
+# date: 2019-01-03
+# build local TeX documents from source
 ##########################################################################################
 
 # run pdflatex on the main.tex file
@@ -22,4 +23,3 @@ pdflatex si.tex
 
 # clean up auxiliary files
 rm *.aux *.log  *.out *.toc *.bbl *.blg *.xwm
-

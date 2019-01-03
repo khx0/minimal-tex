@@ -3,8 +3,8 @@
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
 # file: build.sh
-# date: 2018-12-09
-# build local TeX files
+# date: 2019-01-03
+# build local TeX document from source
 ##########################################################################################
 
 # run pdflatex on the main.tex file
